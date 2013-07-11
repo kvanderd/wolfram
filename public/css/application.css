@@ -7,3 +7,25 @@
 th {
   text-align: left;
 }
+
+
+nav {
+	background-color: purple;
+	font-weight: bold;
+	height: 50px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+#data_form {
+	width: 500px;
+	height: 110px;
+	background-color: #30beda;
+	border-radius: 1px;
+	border-color: black;
+	padding-left: 10px;
+
+}

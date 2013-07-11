@@ -10,8 +10,6 @@ post "/querry" do
   result = Wolfram.fetch(request)
 # to see the result as a hash of pods and assumptions:
   @hash = Wolfram::HashPresenter.new(result).to_hash
-  puts @hash[:pod].class
-  puts @hash[:pod]
   @hash
   erb :view_data
 end

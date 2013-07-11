@@ -1,11 +1,20 @@
-<h2>This is what we think you want <%= @hash[:pods]["Input interpretation"] %></h2>
-<% @hash[:pod].each_pair do |key, value| %>
+<!-- <h2>This is what we think you want <%= @hash[:pods]["Input interpretation"] %></h2> -->
+
+
+<%= @hash %>
+
+<% @hash.each_pair do |key, value| %>
   <h3><%= key %></h3>
-  <ul>
-    <% if !value.nil? %>
-      <% value.each do |data| %>
-        <li><%= data %></li>
-      <% end %>
-    <% end %>
-  </ul>
+	  <ul>
+	    <% if !value.nil? %>
+	      <% value.each do |key, value| %>
+	        <h4><%= key %></h4>
+	        <ul>
+	          <% value.each do |value| %>
+	        	<li><%= value %></li>
+	          <% end %>
+	       </ul>
+	      <% end %>
+	    <% end %>
+	  </ul>
 <% end %>

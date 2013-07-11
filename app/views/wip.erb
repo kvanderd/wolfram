@@ -1,0 +1,10 @@
+<% @hash[:pod].each_pair do |key, value| %>
+  <h3><%= key %></h3>
+  <ul>
+    <% if !value.nil? %>
+      <% value.each do |data| %>
+        <li><%= data %></li>
+      <% end %>
+    <% end %>
+  </ul>
+<% end %>
